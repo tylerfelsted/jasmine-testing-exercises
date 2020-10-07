@@ -13,6 +13,7 @@ describe('Servers test (with setup and tear-down)', function() {
 
 	it('should not add a new server to allServers if serverNameInput is empty', function() {
 		serverNameInput.value = '';
+		submitServerInfo();
 
 		expect(Object.keys(allServers).length).toEqual(0);
 	});
